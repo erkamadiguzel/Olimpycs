@@ -10,7 +10,7 @@ import java.util.List;
 
 public class HomePage extends TestBase {
 
-
+//DEGISTIRDIML
 
     public HomePage(){
         PageFactory.initElements( Driver.getDriver(),this );
@@ -27,7 +27,7 @@ public class HomePage extends TestBase {
     @FindBy(xpath = "//table[@class='wikitable sortable plainrowheaders jquery-tablesorter']/tbody/tr[position()<11]/td[2]")
     public List<WebElement>goldList;
 
-
+        //degisiklik
 
 
     public int findBiggest(){
@@ -37,7 +37,7 @@ public class HomePage extends TestBase {
         int biggestNumber=0;
 
 
-
+//asdsafljksadnf/lsadjfp;dorsj
 
             for(int i=0; i<goldList.size(); i++){
                 biggestNumber=Integer.parseInt( goldList.get( i ).getText() );

@@ -37,7 +37,9 @@ public class TestBase {
 
     @BeforeClass
     public void setUpMethod() {
-        driver = Driver.getDriver();
+        driver = new ChromeDriver(  );
+        driver.get( "https://en.wikipedia.org/wiki/2016_Summer_Olympics" );
+
         driver.manage().timeouts().implicitlyWait( 10, TimeUnit.SECONDS );
         actions = new Actions( driver );
         softAssert = new SoftAssert();
